@@ -14,7 +14,26 @@
 <a name="introduction"></a>
 ## Introduction
 
-**Laravel Pint** is an opinionated PHP code style fixer for minimalists. Pint is built on top of **[PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)** and makes it simple to ensure that your code style stays **clean** and **consistent**.
+**Laravel Pint** is an opinionated PHP code style fixer for minimalists. Pint is built on top of **[PHP-CS-Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)**
+and makes it simple to ensure that your code style stays **clean** and **consistent**.
+
+This fork specifically allows you to configure the indentation used by Pint.
+
+## Configuration
+
+Specify a `indent` option in your `pint.json` file.
+
+- If you use tabs, set the value to `\t`
+- If you use 2 spaces, set the value to `  ` _(two spaces)_
+- If you use 4 spaces, set the value to `    ` _(four spaces)_
+
+Example:
+```json
+{
+    "preset": "laravel",
+    "indent": "\t"
+}
+```
 
 ## Official Documentation
 
