@@ -46,6 +46,7 @@ class ConfigurationFactory
             ->setParallelConfig(ParallelConfigFactory::detect())
             ->setFinder(self::finder())
             ->setRules(array_merge($rules, resolve(ConfigurationJsonRepository::class)->rules()))
+            ->setIndent(resolve(ConfigurationJsonRepository::class)->indent())
             ->setRiskyAllowed(true)
             ->setUsingCache(true);
     }

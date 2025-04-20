@@ -2,6 +2,8 @@
 
 namespace App\Repositories;
 
+use PhpCsFixer\Config;
+
 class ConfigurationJsonRepository
 {
     /**
@@ -67,6 +69,16 @@ class ConfigurationJsonRepository
     public function preset()
     {
         return $this->preset ?: ($this->get()['preset'] ?? 'laravel');
+    }
+
+    /**
+     * Get the indent option.
+     *
+     * @return string
+     */
+    public function indent()
+    {
+        return $this->get()['indent'] ?? (new Config)->getIndent();
     }
 
     /**

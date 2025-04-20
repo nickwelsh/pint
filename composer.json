@@ -1,6 +1,6 @@
 {
-    "name": "laravel/pint",
-    "description": "An opinionated code formatter for PHP.",
+    "name": "nickwelsh/pint",
+    "description": "An opinionated code formatter for PHP. Now with indentation options!",
     "keywords": ["php", "format", "formatter", "lint", "linter"],
     "homepage": "https://laravel.com",
     "type": "project",
